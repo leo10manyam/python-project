@@ -8,7 +8,7 @@ hours = st.slider("How many hours did you sleep?", 0, 12, 6)
 # Basic ML-like logic
 def predict(hours_slept):
     return "Tired 😴" if hours_slept < 6 else "Not Tired 😃"
-
+print(predict(5))  # For debugging
 # Show prediction
 prediction = predict(hours)
 st.write(f"Prediction: **{prediction}**")
