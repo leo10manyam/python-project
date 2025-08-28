@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.title("Sleep Predictor AI 🧠")
-
+print("App started")  # For debugging
 # Input from user
 hours = st.slider("How many hours did you sleep?", 0, 12, 6)
 
@@ -14,6 +14,7 @@ prediction = predict(hours)
 st.write(f"Prediction: **{prediction}**")
 
 api_key = st.secrets["API_KEY"]
+
 
 # Fetch another secret
 db_password = st.secrets["DB_PASSWORD"]
